@@ -8,11 +8,11 @@ public class Frame {
     /**
      * score du premier essai.
      */
-    private int Lancer1 = 0;
+    private int lancerun = 0;
     /**
      * score du deuxieme essai.
      */
-    private int Lancer2 = 0;
+    private int lancerdeux = 0;
     /**
      * score maximum.
      */
@@ -21,30 +21,30 @@ public class Frame {
     /**
      * constructeur.
      *
-     * @param firstThrow the Lancer1
-     * @param secondThrow the Lancer2
+     * @param firstThrow the lancerun
+     * @param secondThrow the lancerdeux
      */
     public Frame(final int firstThrow, final int secondThrow) {
-        Lancer1 = firstThrow;
-        Lancer2 = secondThrow;
+        lancerun = firstThrow;
+        lancerdeux = secondThrow;
     }
 
     /**
      * Acceder au score de premier essai.
      *
-     * @return Lancer1
+     * @return lancerun
      */
     final int getFirstScore() {
-        return Lancer1;
+        return lancerun;
     }
 
     /**
      * Score totale de chaque frame.
      *
-     * @return Lancer1 + Lancer2
+     * @return lancerun + lancerdeux
      */
     final int getTotalScore() {
-        return Lancer1 + Lancer2;
+        return lancerun + lancerdeux;
     }
 
     /**
